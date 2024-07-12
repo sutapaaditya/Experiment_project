@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font-family: "Raleway", sans-serif; */
+/* font-family: "Lato", sans-serif; */
+/* font-family: "Mukta", sans-serif; */
+:root{
+  --bg-color: #ffcc85;
+    --head-color: #c7c7d1;
+  --card-color: #efb081;
+    --carousel-color: ;
+    --font-color: #023c40;
+  --carousel-review: #ffddad;  
+    --accordion-color: #ffbb5c;
+  --gallery-color: #fbe4b1;
+    --footer-color: #f8e0a0;
+  --navigation-color:#f2ac2c;
+    --container-color: #e4cf62;
+}
+body{
+  background-color: floralwhite;
+  color: blue;
+}
