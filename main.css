@@ -7,17 +7,18 @@
 /* font-family: "Lato", sans-serif; */
 /* font-family: "Mukta", sans-serif; */
 :root{
-  --bg-color: #ffe6c2;
-    --head-color: #c7c7d1;
+  --bg-color: #f7e5da;
+    --head-color: #832b00;
   --card-color: #efb081;
     --carousel-color: #b86b00;
     --font-color: #7a4700;
-  --carousel-review: #ffddad;  
+  --carousel-review: #ff8547;  
     --accordion-color: #ffbb5c;
-  --gallery-color: #fbe4b1;
+  --gallery-color: #ffad85;
     --footer-color: #f8e0a0;
   --navigation-color:#f2ac2c;
-    --container-color: #f58f00;
+    --container-color: #c9682c;
+  --extra-color: #ffc9ad;
 }
 body{
   background-color: var(--bg-color);
@@ -35,7 +36,7 @@ body{
   justify-content: space-between;
   padding: 40px 0;
   width: 100%;
-  background-color: var(--carousel-review);
+  background-color: var(--extra-color);
 }
 .nav-left img{
   width: 3rem;
@@ -48,7 +49,7 @@ body{
   display: flex; 
   justify-content: space-evenly;
   align-items: center;
-  color: var(--container-color);
+  color: var(--head-color);
   text-transform: uppercase;
   margin-top: 5px;
 font-family: "Lato", sans-serif;
@@ -72,17 +73,22 @@ font-family: "Raleway", sans-serif;
   border: 1px solid #f58f00;
 }
 .head-line{
-  background-color: #f8e0a0;
-  height: 100%;
-  border: 2px solid salmon;
+  /* background-color: #f8e0a0; */
+  height: 250px;
+  width: 100%;
+  /* border: 2px solid salmon; */
+  margin: 0 auto;
+  gap: 5px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  /* align-items: center; */
 }
 .head-pic{
-  display: flex;
-  flex-direction: column;
   height: 100%;
+  border: 2px solid salmon;
+  gap: 5px;
+  background-color: var(--card-color);
 }
 .head-pic img{
   width: 70px;
@@ -90,9 +96,11 @@ font-family: "Raleway", sans-serif;
   margin-left: 10px;
   border-radius: 50%;
 }
-.contain span{
-  word-spacing: 2px;
+.text{
 font-family: "Mukta", sans-serif;
-  margin-left: 5px;
   font-weight: 700;
+  text-transform: uppercase;
 }
+/* .contain span{ */
+/*   word-spacing: 2px; */
+/* } */
