@@ -22,12 +22,10 @@
 }
 body{
   background-color: var(--bg-color);
-  color: var(--font-color);
 }
 .container{
-  max-width: 90%;
-  margin: 0 auto;
   max-width: 80rem;
+  margin: 0 auto;
   border: 1px solid #f2ac2c; 
   margin: 5px auto;
 }
@@ -70,25 +68,30 @@ font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   background-color: var(--accordion-color);
-  border: 1px solid #f58f00;
+  color: var(--font-color);
+  border-top: 1px solid #832b00;
+  border-bottom:1px solid #832b00; 
 }
 .head-line{
-  /* background-color: #f8e0a0; */
-  height: 250px;
+  height: 188px;
   width: 100%;
-  /* border: 2px solid salmon; */
   margin: 0 auto;
   gap: 5px;
   display: flex;
-  /* justify-content: space-between; */
+  border-bottom: 1px solid #832b00;
   flex-direction: row;
-  /* align-items: center; */
 }
 .head-pic{
   height: 100%;
-  border: 2px solid salmon;
   gap: 5px;
-  background-color: var(--card-color);
+  background-color: var(--extra-color);
+}
+.button{
+  margin: 6px 98px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  color: var(--container-color);
+  text-transform: uppercase;
 }
 .head-pic img{
   width: 70px;
@@ -96,11 +99,66 @@ font-family: "Raleway", sans-serif;
   margin-left: 10px;
   border-radius: 50%;
 }
+.head-pic p{
+font-size: 16px;  
+font-family: "Raleway", sans-serif;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--font-color);
+}
 .text{
 font-family: "Mukta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--font-color);
 }
-/* .contain span{ */
-/*   word-spacing: 2px; */
-/* } */
+.gallery{
+  max-width: 80rem;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+    "1 1 2 2 ."
+    "3 3 4 4 ."
+    "5 5 6 6 ."
+    "7 7 8 8 ."
+    "9 9 10 10 ."
+    ". . 11 11 .";
+}
+.photo img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+#f1{
+  grid-area: 1;
+}
+#f2{
+  grid-area: 2;
+}
+#f3{
+  grid-area: 3;
+}
+#f4{
+  grid-area: 4;
+}
+#f5{
+  grid-area: 5;
+}
+#f6{
+  grid-area: 6;
+}
+#f7{
+  grid-area: 7;
+}
+#f8{
+  grid-area: 8;
+}
+#f9{
+  grid-area: 9;
+}
+#f10{
+  grid-area: 10;
+}
